@@ -7,7 +7,7 @@
 
 # testing
 /frontend/coverage
-
+/frontend/.pdf
 # production
 /frontend/build
 

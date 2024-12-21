@@ -4,12 +4,15 @@ import { Grow } from '@mui/material';
 import DrawerAppBar from "./Appbar";
 import { Typography } from '@mui/material';
 import ResumeButton from './handleResume';
+import SkillsSection from './Skills';
+import Projects from './Projects';
 
 export default function Homepage() {
     return (
         <div>
             <DrawerAppBar />
             <Box
+                id = "home"
                 sx={{
                     width: '100%',
                     height: '100vh',
@@ -115,6 +118,27 @@ export default function Homepage() {
                         <ResumeButton />
                     </Box>
                 </Box>
+            </Box>
+            <Box
+                id="skills" // Add an id for SkillsSection
+                sx={{
+                    width: '100%',
+                    // height: '100vh',
+                    pt: 8,
+                }}
+            >
+            <SkillsSection />
+            </Box>
+            <Box
+                id="projects" // Add an id for Projects
+                sx={{
+                    mt:4,
+                    width: '100%',
+                    // height: '100vh',
+                    // pt: 8,
+                }}
+            >
+                <Projects />
             </Box>
         </div>
     );
