@@ -6,13 +6,14 @@ import { Typography } from '@mui/material';
 import ResumeButton from './handleResume';
 import SkillsSection from './Skills';
 import Projects from './Projects';
+import Contact from './Contacts';
 
 export default function Homepage() {
     return (
         <div>
             <DrawerAppBar />
             <Box
-                id = "home"
+                id="home"
                 sx={{
                     width: '100%',
                     height: '100vh',
@@ -93,26 +94,26 @@ export default function Homepage() {
                     >
                         About Me
                     </Typography>
-                    
+
                     <Grow
                         in={true}
-                        style={{transformOrigin: '0 0 0'}}
-                        {...{timeout:2500}}
+                        style={{ transformOrigin: '0 0 0' }}
+                        {...{ timeout: 2500 }}
                     >
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            color: 'black',
-                            fontFamily: 'Roboto Mono, monospace',
-                            fontSize: '1rem',
-                            lineHeight: 1.6,
-                        }}
-                    >
-                        Name: Sathyanarayanan Rengasamy Suresh <br />
-                        Education: MS Computer Engineering, Virginia Tech <br />
-                        Focus: Software Engineering <br />
-                        Email: sathya@vt.edu
-                    </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: 'black',
+                                fontFamily: 'Roboto Mono, monospace',
+                                fontSize: '1rem',
+                                lineHeight: 1.6,
+                            }}
+                        >
+                            Name: Sathyanarayanan Rengasamy Suresh <br />
+                            Education: MS Computer Engineering, Virginia Tech <br />
+                            Focus: Software Engineering <br />
+                            Email: sathya@vt.edu
+                        </Typography>
                     </Grow>
                     <Box sx={{ mt: 2 }}>
                         <ResumeButton />
@@ -123,22 +124,40 @@ export default function Homepage() {
                 id="skills" // Add an id for SkillsSection
                 sx={{
                     width: '100%',
-                    // height: '100vh',
                     pt: 8,
                 }}
             >
-            <SkillsSection />
+                <SkillsSection />
             </Box>
             <Box
                 id="projects" // Add an id for Projects
                 sx={{
-                    mt:4,
+                    mt: 4,
                     width: '100%',
-                    // height: '100vh',
-                    // pt: 8,
                 }}
             >
                 <Projects />
+            </Box>
+            <Contact />
+            <Box
+                component="footer"
+                sx={{
+                    width: '100%',
+                    backgroundColor: '#000', // Black background
+                    color: '#fff', // White text
+                    textAlign: 'center',
+                    py: 2, // Padding top and bottom
+                    mt: 4, // Margin top for spacing
+                }}
+            >
+                <Typography
+                    variant="body2"
+                    sx={{
+                        fontFamily: 'Roboto Mono, monospace',
+                    }}
+                >
+                    Built by me, myself and I using React-MUI, Django
+                </Typography>
             </Box>
         </div>
     );

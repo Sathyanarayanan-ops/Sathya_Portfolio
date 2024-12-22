@@ -42,9 +42,9 @@ export default function OutlinedCard({ title, techStack, description, githubLink
             px: 2, // Padding for alignment
           }}
         >
-          <Button size="small" variant="contained" sx={{ backgroundColor: '#f50057', color: 'white' }}>
+          {/* <Button size="small" variant="contained" sx={{ backgroundColor: '#f50057', color: 'white' }}>
             Learn More
-          </Button>
+          </Button> */}
           <Link
             href={githubLink}
             target="_blank"
