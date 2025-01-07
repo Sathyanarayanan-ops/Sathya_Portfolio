@@ -16,9 +16,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
+
+// Add "Work Experience" to the navigation items
 const navItems = [
   { label: 'Home', id: 'home' },
   { label: 'Skills', id: 'skills' },
+  { label: 'Work Experience', id: 'workexperience' }, // New Section
   { label: 'Projects', id: 'projects' },
   { label: 'Contact', id: 'contact' },
 ];
@@ -31,22 +34,31 @@ function DrawerAppBar(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  // Function to scroll to a specific section
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  // Drawer content for mobile navigation
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Portfolio
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding> {/* Use item.label as key */}
-            <ListItemButton 
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton
               sx={{ textAlign: 'center' }}
-              onClick={() => scrollToSection(item.id)} // Add onClick for navigation
+              onClick={() => scrollToSection(item.id)}
             >
-              <ListItemText 
-                primary={item.label} 
-                sx={{ fontFamily: 'Roboto mono, monospace' }} 
+              <ListItemText
+                primary={item.label}
+                sx={{ fontFamily: 'Roboto Mono, monospace' }}
               />
             </ListItemButton>
           </ListItem>
@@ -55,19 +67,13 @@ function DrawerAppBar(props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if(section){
-      section.scrollIntoView({behavior:'smooth',block:'start'});
-    }
-  };
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx = {{backgroundColor:'#000000'}}>
+      <AppBar component="nav" sx={{ backgroundColor: '#000000' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -81,16 +87,20 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily: 'Robot mono, monospace' }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+              fontFamily: 'Roboto Mono, monospace',
+            }}
           >
             Portfolio
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button 
-              key={item.label} 
-              sx={{ color: '#fff' }}
-              onClick={()=> scrollToSection(item.id)}
+              <Button
+                key={item.label}
+                sx={{ color: '#fff' }}
+                onClick={() => scrollToSection(item.id)}
               >
                 {item.label}
               </Button>
@@ -105,7 +115,7 @@ function DrawerAppBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, // Better open performance on mobile
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
@@ -115,7 +125,7 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </nav>
-         </Box>
+    </Box>
   );
 }
 
