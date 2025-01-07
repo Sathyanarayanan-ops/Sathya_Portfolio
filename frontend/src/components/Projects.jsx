@@ -17,27 +17,27 @@ const projectData = [
   },
   {
     title: "Maps Application",
-    techStack: "React-leaflet, Django, Postgres",
-    description: "Maps application that uses custom built map engine backend that uses A* algorithm to find shortest route",
+    techStack: "React-leaflet, Django, Postgres, Docker",
+    description: "Maps application that uses custom built map engine backend, calculates fare and distance and stores trips separately for riders, drivers and admin in PG DB, uses Route Based Access (RBAC) with JWT login to keep drivers and riders separate. Employs Stripe for payment gateway.",
     githubLink: "https://github.com/Sathyanarayanan-ops/LeafletMap"
   },
   {
     title: "A* Routing Engine",
-    techStack: "Python",
-    description: "Custom map routing engine that uses self implemented A* algorithm to find shortest route, user can give start, end and intermediate stops; published as a PyPI package. Install with command <pip install aStarEngine-package>",
+    techStack: "Python , PiP, PyPI ",
+    description: "Custom map routing engine that uses self implemented A* algorithm to find shortest route, user can give start, end and intermediate stops; published as a PyPI package. \n Install with command <pip install aStarEngine-package>",
     githubLink: "https://github.com/Sathyanarayanan-ops/map_engine"
   },
   {
-    title: "Portfolio Website",
-    techStack: "React, Material-UI",
-    description: "A responsive personal portfolio website showcasing projects, skills, and contact information.",
-    githubLink: "https://github.com/example/portfolio-website"
+    title: "Document Q&A RAG",
+    techStack: "Python, FastAPI, Langchain , Llama 2",
+    description: "RAG application with Chat Interface to ask questions regarding a given PDF, generate Q&A and Multiple Choice Questions. Finetuned to subject specific data and advanced prompting techniques such as few-shot for further improving accuracy",
+    githubLink: "https://github.com/Sathyanarayanan-ops/QAgenRAGapp"
   },
   {
-    title: "Inventory Management System",
-    techStack: "Django, PostgreSQL",
-    description: "A system for managing inventory with features like stock tracking, sales analysis, and reporting.",
-    githubLink: "https://github.com/example/inventory-management"
+    title: "Employee Management System",
+    techStack: "Python, FastAPI, React ",
+    description: "Monolothic CRUD based application for hanlding leave creating employees, setting roles, automatically assigning heirarchical structure with manager, teams, HR. Leave request system, automatically sends request to Manger and HR, uses RBAC to control the hierarchy.",
+    githubLink: "https://github.com/Sathyanarayanan-ops/QAgenRAGapp"
   }
 ];
 
