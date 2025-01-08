@@ -1,6 +1,6 @@
 # Portfolio Website 
 
-Sample of the site here [https://sathyanarayanan-ops.github.io/Sathya_Portfolio/](url)
+Sample of the site here [https://sathyanarayanan-ops.github.io/Sathya_Portfolio/](https://sathyanarayanan-ops.github.io/Sathya_Portfolio/)
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
