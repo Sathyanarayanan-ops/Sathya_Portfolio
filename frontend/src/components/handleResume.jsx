@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 export default function ResumeButton() {
   const handleOpenPDF = () => {
     // Opens the PDF in a new tab
-    window.open(`${process.env.PUBLIC_URL}/TestForReact.pdf`, '_blank');
+    window.open(`${process.env.PUBLIC_URL}/Sathya_RS_CV2025.pdf`, '_blank');
   };
 
   return (
