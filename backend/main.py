@@ -7,6 +7,7 @@ from chatbot import chatbot_response
 from decouple import config
 import sys
 from dotenv import load_dotenv, find_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 
 dotenv_path = find_dotenv()
 
@@ -28,6 +29,14 @@ if not GROQ_API_KEY:
 print(f"✅ GROQ_API_KEY is loaded: {bool(GROQ_API_KEY)}")
 # app = FastAPI()
 app = FastAPI(title="Chatbot API", description="A chatbot for Sathya's portfolio")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 🔥 Change this to your frontend domain for production
+    allow_credentials=True,
+    allow_methods=["*"],  # ✅ Allow all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # ✅ Allow all headers
+)
+
 
 class ChatRequest(BaseModel):
     message:str
