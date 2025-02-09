@@ -26,7 +26,7 @@ export default function ChatWidget() {
     setMessages([...messages, userMessage]); // Add user message to chat UI
 
     try {
-        const response = await fetch("https://9jkek7qym5.execute-api.us-east-1.amazonaws.com/chat", { 
+        const response = await fetch("https://9jkek7qym5.execute-api.us-east-1.amazonaws.com/chat/", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input, thread_id: "default_thread" }),
