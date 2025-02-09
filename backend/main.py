@@ -32,11 +32,12 @@ print(f"✅ GROQ_API_KEY is loaded: {bool(GROQ_API_KEY)}")
 app = FastAPI(title="Chatbot API", description="A chatbot for Sathya's portfolio")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sathyanarayanan-ops.github.io/Sathya_Portfolio/"],  # Change this to your frontend domain for production
+    allow_origins=["https://sathyanarayanan-ops.github.io"],  # ✅ Fix: No trailing slash
     allow_credentials=True,
-    allow_methods=["*"],  # ✅ Allow all HTTP methods (GET, POST, etc.)
-    allow_headers=["*"],  # ✅ Allow all headers
+    allow_methods=["GET", "POST", "OPTIONS"],  # ✅ Fix: Ensure API Gateway allows OPTIONS
+    allow_headers=["Content-Type", "Authorization", "X-Requested-With"],  # ✅ Fix: API Gateway must allow these
 )
+
 
 
 class ChatRequest(BaseModel):
