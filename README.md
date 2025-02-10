@@ -6,6 +6,8 @@ Here’s a **clean, professional, and well-structured README** incorporating det
 A modern, **React-powered** portfolio website showcasing my **skills, experience, and projects**, now enhanced with an **AI chatbot assistant** deployed on **AWS Lambda**.
 
 📌 **Live Demo:** [Sathya's Portfolio](https://sathyasportfolio.netlify.app)  
+![Screenshot 2025-02-10 at 12 24 06 PM](https://github.com/user-attachments/assets/5c139a07-dc6e-4eb9-bc64-a03f535b8796)
+![Screenshot 2025-02-10 at 12 25 14 PM](https://github.com/user-attachments/assets/f2ebe713-0229-4826-b0e6-29eddc36f717)
 
 ---
 
