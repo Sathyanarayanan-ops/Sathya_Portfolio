@@ -30,7 +30,7 @@ const projectData = [
   {
     title: "Custom SQLite Database",
     techStack: "C , SQL, SQLite,",
-    description: "Developed a lightweight, custom-built SQLite database engine from scratch in C, focusing on understanding and modifying SQLite’s internal architecture. Implemented core database functionalities such as parsing SQL queries, handling B-trees for indexing, and managing memory-efficient storage. Optimized query execution and explored source-level transformations to enhance performance by reducing branch mispredictions. Designed with extensibility in mind to experiment with custom optimizations and features beyond standard SQLite capabilities.",
+    description: "Developed a lightweight, custom-built SQLite database engine from scratch in C, focusing on understanding and modifying SQLite’s internal architecture. Implemented core database functionalities such as parsing SQL queries, handling B-trees for indexing, and managing memory-efficient storage. Optimized query execution and explored source-level transformations to enhance performance by reducing branch mispredictions.",
     githubLink: "https://github.com/Sathyanarayanan-ops/mydb_sqlite"
   },
   {
