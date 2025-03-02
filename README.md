@@ -1,6 +1,3 @@
-Here’s a **clean, professional, and well-structured README** incorporating details about your **portfolio website and AI-powered chatbot** deployed on AWS Lambda.  
-
----
 
 ### 🚀 **Sathya’s Portfolio Website & AI Assistant**
 A modern, **React-powered** portfolio website showcasing my **skills, experience, and projects**, now enhanced with an **AI chatbot assistant** deployed on **AWS Lambda**.
