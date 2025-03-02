@@ -22,6 +22,18 @@ const projectData = [
     githubLink: "https://github.com/Sathyanarayanan-ops/LeafletMap"
   },
   {
+    title: "Personal Assistant Chatbot",
+    techStack: "Langchain , FastAPI, AWS Lambda , Docker , Groq",
+    description: "Serverless AI-powered chatbot fine-tuned to profile, enhancing recruiter engagement and understanding ,Deployed on AWS Lambda, reducing infrastructure costs by 99% by eliminating the need for an EC2 instance Leveraged Meta LLaMA 3 on Groq, achieving a 90% reduction in computation intensity, with requests efficiently routed via a static Netlify frontend for optimal performance",
+    githubLink: "https://github.com/Sathyanarayanan-ops/Sathya_Portfolio"
+  },
+  {
+    title: "Custom SQLite Database",
+    techStack: "C , SQL, SQLite,",
+    description: "Developed a lightweight, custom-built SQLite database engine from scratch in C, focusing on understanding and modifying SQLite’s internal architecture. Implemented core database functionalities such as parsing SQL queries, handling B-trees for indexing, and managing memory-efficient storage. Optimized query execution and explored source-level transformations to enhance performance by reducing branch mispredictions. Designed with extensibility in mind to experiment with custom optimizations and features beyond standard SQLite capabilities.",
+    githubLink: "https://github.com/Sathyanarayanan-ops/mydb_sqlite"
+  },
+  {
     title: "A* Routing Engine",
     techStack: "Python , PiP, PyPI ",
     description: "Custom map routing engine that uses self implemented A* algorithm to find shortest route, user can give start, end and intermediate stops; published as a PyPI package. \n Install with command <pip install aStarEngine-package>",
