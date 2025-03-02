@@ -143,14 +143,6 @@ This project is **open-source** under the MIT License.
 ## 📞 **Contact**
 🔹 **Portfolio:** [sathyasportfolio.netlify.app](https://sathyasportfolio.netlify.app)  
 🔹 **GitHub:** [Sathyanarayanan-ops](https://github.com/Sathyanarayanan-ops)  
-🔹 **LinkedIn:** [Your LinkedIn Profile](#)
+
 
 ---
-
-### 🎯 **Next Steps**
-- ✅ Improve AI chatbot responses  
-- ✅ Optimize API performance  
-- ⏳ Add voice interaction  
-- ⏳ Deploy chatbot as a standalone API service  
-
-🔥 **This README is now clean, professional, and fully documents your project!** 🚀 Let me know if you need tweaks! 😃
