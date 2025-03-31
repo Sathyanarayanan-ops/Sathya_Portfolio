@@ -18,7 +18,7 @@ const workExperienceData = [
     company: "Genpact - bEarly Technovations",
     duration: "July 2022 - June 2023",
     description: [
-      "Developed a simple automation pipeline using a combination of ORM and AWS Opensearch integration, delivering a comprehensive search result on the database, saving time by up to 50%.",
+      "Developed data ingesting pipeline with 100,000 data streams per hour using Kafka, reducing latency by 50%, and increasing throughput.",
       "Engaged in cleaning processes and EDA of survey data from the client’s database, including implementing a robust tracking system to analyze time spent by users on surveys.",
       "Leveraged AWS cloud technologies to process client data efficiently while scaling it for future use."
     ],
