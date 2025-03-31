@@ -40,14 +40,7 @@ const SkillsSection = () => {
     ];
 
     return (
-        <Box
-            sx={{
-                padding: "2rem",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-            }}
-        >
+        <Box sx={{ padding: "2rem" }}>
             {/* Section Title */}
             <Typography
                 variant="h4"
@@ -81,22 +74,27 @@ const SkillsSection = () => {
                 sx={{
                     display: "grid",
                     gridTemplateColumns: {
-                        xs: "1fr", 
+                        xs: "1fr",
                         sm: "1fr",
-                        md: "repeat(2, 1fr)",
-                        lg: "repeat(3, 1fr)",
-                        xl: "repeat(4, 1fr)",
+                        md : "repeat(3, 1fr)", // Four categories side by side  
                     },
-                    gap: "2rem",
-                    maxWidth: "1200px",       // constrain to a readable width
-                    margin: "0 auto",         // center it
-                    px: { xs: 2, md: 4 },     // add horizontal padding for smaller screens
+                    justifyContent: "center",
+                    gap: "2rem", // Space between categories
+                    flexWrap: "wrap",
                 }}
             >
 
 
                 {skillCategories.map((category) => (
-                    <Box key={category.title} sx={{ textAlign: "center" }}>
+                        <Box
+                        key={category.title}
+                        sx={{
+                            textAlign: "center",
+                            minWidth: "250px",
+                            flex: "1 1 300px",
+                        }}
+                    >
+                    
                         {/* Category Title */}
                         <Typography
                             variant="h5"
@@ -120,6 +118,8 @@ const SkillsSection = () => {
                                 gridTemplateColumns:
                                     category.title === "Build Stack"
                                         ? "repeat(3, 1fr)" // 3 icons per row for Build Stack
+                                        : category.title === "Cloud and Other Tools"
+                                        ? "repeat(3, 1fr)"
                                         : "repeat(2, 1fr)", // 2 icons per row for other categories
                                 gap: "1rem",
                             }}
