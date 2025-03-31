@@ -4,6 +4,19 @@ import OutlinedCard from "./ProjectCards";
 
 const projectData = [
   {
+    title: "Daily Assistant Multi Agent System",
+    techStack: "Langgraph, GroqCloud, Llama 3 , FastAPI, Docker",
+    description: "Zero cost multi agent system orchestrated in a Master-Worker architecture , with Email agent using Gmail API for mail summaries, Github Agent using Github API for regular code changes in Github Repos, Chatbot Master Agent Equipped with Weather API , Calender API, and DB for daily updates and to store reminders",
+    githubLink: "https://github.com/Sathyanarayanan-ops/EmailAgent"
+
+  },
+  {
+    title: "Ecommerce Price Surge Data Pipeline",
+    techStack: "Apache Kafka, Apache Spark, Spark MLlib, Django , Postgres ",
+    description: "Data Engineering pipeline to ingest live traffic data, customer purchase and cart data using Apache Kafka, processed for meaningful insights using Apache Spark and MLlib, introduces price surge for on demand items based on threshold and inventory stock and sends notif for restock. ",
+    githubLink: "https://github.com/Sathyanarayanan-ops/Ecommerce_DataEngineering"
+  },
+  {
     title: "Text to SQL RAG Application",
     techStack: "Python, MySQL, Langchain",
     description: "Python application powered by LLama 3 which takes in Natural Language user input, performs SQL query actions and returns output in natural language along with necessary responses including tabulated output.",
