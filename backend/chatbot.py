@@ -76,8 +76,8 @@ prompt_template = ChatPromptTemplate.from_messages(
                 "- Deployed LLM models on **AWS EKS with Kubernetes, Docker, and Jenkins**, ensuring automated CI/CD.\n\n"
 
                 "### Programmer Analyst | Genpact - bEarly Technovations (May 2022 - Aug 2023, India)\n"
-                "- Developed an **integrated search pipeline** combining **ORM and AWS OpenSearch**, reducing search time by 50%.\n"
-                "- Conducted **EDA and data processing** on client survey data, ensuring robust user behavior tracking.\n"
+                "- Developed data ingesting pipeline with 100,000 data streams per hour using Kafka, reducing latency by 50%, and increasing throughput.\n"
+                "- Conducted **EDA and data processing** on client survey data, ensuring robust user behavior tracking, performed unittesting\n"
                 "- Utilized **AWS cloud services** for large-scale data processing and pipeline scaling.\n\n"
 
                 "### Undergraduate Research Assistant | SASTRA University (Jan 2022 - May 2022, India)\n"
@@ -85,6 +85,20 @@ prompt_template = ChatPromptTemplate.from_messages(
                 "- Implemented **ROS topics and CV models** for real-time waste classification, presented at an IEEE conference.\n\n"
 
                 "## Projects\n"
+                "### Daily Assistant Multi Agent System\n"
+                "- **Multi agent system using langgraph, Fastapi, Llama 3 and Groq Cloud, hosted with zero cost"
+                "- **Multiple agent supervised by Master Agent with chatbot functionality to interact with user "
+                "- **Email Agent with Gmail Api provides email summaries as well as sending emails, Github Agent with github APi, provides regular updates on code changes for user to stay updated"
+                "- **Master Agent with chatbot controls other agent, with handoff ability for fault tolerance, and also equipped with weather api and calender access for reminders and plans"
+
+                "### E-Commerce Price surge implementing Data Engineering Pipeline\n"
+                "- ** Setup E-commerce website with live traffic"
+                "- ** Pipeline ingests live traffic data, customer purchase data, cart data using Apache Kafka"
+                "- ** Ingested data processed by Apache Spark to extract meaningful insights"
+                "- ** Based on item demand, Spark data and MLlib uses a threshold to introduce price surge to control demand"
+                "- ** Data saved in Db for historical analysis, price surge brought back to normal after deman reduces"
+
+
                 "### Stock Portfolio Management System\n"
                 "- **Full-stack stock tracking system** using **Django (backend), PostgreSQL, and React (frontend)**.\n"
                 "- Uses **live Yahoo Finance (`yfinance`) data** for real-time stock tracking.\n"
@@ -102,6 +116,12 @@ prompt_template = ChatPromptTemplate.from_messages(
                 "- Real-time leave request status updates via **AWS AppSync (GraphQL)**.\n"
                 "- Automated HR email/SMS notifications via **AWS EventBridge + SNS**.\n"
                 "- Built with **React frontend and AWS DynamoDB for scalable data storage**.\n\n"
+
+                "### Custom SQLite Database\n"
+                "Tech Stack - C , SQL, SQLite,\n"
+                "- Developed a lightweight, custom-built SQLite database engine from scratch in C, focusing on understanding and modifying SQLite’s internal architecture.\n"
+                "- Implemented core database functionalities such as parsing SQL queries, handling B-trees for indexing, and managing memory-efficient storage.\n" 
+                " - Optimized query execution and explored source-level transformations to enhance performance by reducing branch mispredictions. Designed with extensibility in mind to experiment with custom optimizations and features beyond standard SQLite capabilities.\n"
 
                 "## Expected Chatbot Behavior\n"
                 "- Provide **detailed explanations** about my projects, experience, and skills.\n"
