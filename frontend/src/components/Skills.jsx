@@ -16,28 +16,25 @@ const SkillsSection = () => {
             ],
         },
         {
-            title: "Cloud Technologies",
+            title: "Data Technologies",
             skills: [
-                { icon: "aws", label: "AWS" },
-                { icon: "docker", label: "Docker" },
-            ],
-        },
-        {
-            title: "Database Technologies",
-            skills: [
-                { icon: "mysql", label: "MySQL" },
                 { icon: "postgres", label: "PostgreSQL" },
                 { icon: "mongodb", label: "MongoDB" },
                 { icon: "redis", label: "Redis" },
+                { icon: "kafka", label: "Kafka"},
             ],
         },
+
         {
-            title: "Other Tools",
+            title: "Cloud and Other Tools",
             skills: [
+                { icon: "aws", label: "AWS" },
+                { icon: "docker", label: "Docker" },
                 { icon: "postman", label: "Postman" },
                 { icon: "git", label: "Git" },
                 { icon: "nginx", label: "Nginx" },
                 { icon: "ai", label: "AI" },
+
             ],
         },
     ];
@@ -76,10 +73,17 @@ const SkillsSection = () => {
             <Box
                 sx={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(4, 1fr)", // Four categories side by side
-                    gap: "2rem", // Space between categories
+                    gridTemplateColumns: {
+                        xs: "1fr",     // Single column on small screens
+                        sm: "1fr",     // Still one column on small-medium screens
+                        md: "repeat(2, 1fr)", // 2 columns on tablets
+                        lg: "repeat(3, 1fr)", // 3 columns on desktops
+                        xl: "repeat(4, 1fr)", // 4 columns on large screens
+                    },
+                    gap: "2rem",
                 }}
             >
+
                 {skillCategories.map((category) => (
                     <Box key={category.title} sx={{ textAlign: "center" }}>
                         {/* Category Title */}
