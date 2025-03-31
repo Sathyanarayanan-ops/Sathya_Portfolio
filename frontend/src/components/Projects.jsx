@@ -85,10 +85,14 @@ export default function Projects() {
         </Typography>
         <Box
           sx={{
-            p: 4, // Padding around the grid
+            px: { xs: 2, sm: 4, md: 6 },
+            py: 4,
+            maxWidth: "1600px",
+            margin: "0 auto",
+            width: "100%",
           }}
         >
-          {/* Grid for cards */}
+      {/* Grid for cards */}
           <Grid container spacing={4}>
             {/* Generate cards dynamically from projectData */}
             {projectData.map((project, index) => (
