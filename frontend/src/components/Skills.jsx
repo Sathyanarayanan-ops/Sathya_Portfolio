@@ -40,7 +40,14 @@ const SkillsSection = () => {
     ];
 
     return (
-        <Box sx={{ padding: "2rem" }}>
+        <Box
+            sx={{
+                padding: "2rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+            }}
+        >
             {/* Section Title */}
             <Typography
                 variant="h4"
@@ -74,15 +81,19 @@ const SkillsSection = () => {
                 sx={{
                     display: "grid",
                     gridTemplateColumns: {
-                        xs: "1fr",     // Single column on small screens
-                        sm: "1fr",     // Still one column on small-medium screens
-                        md: "repeat(2, 1fr)", // 2 columns on tablets
-                        lg: "repeat(3, 1fr)", // 3 columns on desktops
-                        xl: "repeat(4, 1fr)", // 4 columns on large screens
+                        xs: "1fr", 
+                        sm: "1fr",
+                        md: "repeat(2, 1fr)",
+                        lg: "repeat(3, 1fr)",
+                        xl: "repeat(4, 1fr)",
                     },
                     gap: "2rem",
+                    maxWidth: "1200px",       // constrain to a readable width
+                    margin: "0 auto",         // center it
+                    px: { xs: 2, md: 4 },     // add horizontal padding for smaller screens
                 }}
             >
+
 
                 {skillCategories.map((category) => (
                     <Box key={category.title} sx={{ textAlign: "center" }}>
